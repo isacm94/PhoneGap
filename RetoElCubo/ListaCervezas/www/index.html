@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below.
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+-->
+    <link rel="stylesheet" href="onsenui/css/onsenui.css" />
+    <link rel="stylesheet" href="onsenui/css/onsen-css-components.css" />
+    <script src="onsenui/js/angular-onsenui.js"></script>
+    <script src="onsenui/js/onsenui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Listado de cervezas</title>
+</head>
+
+<body>
+    <ons-navigator id="myNavigator" page="page1.html"></ons-navigator>
+
+    <ons-template id="page1.html">
+        <ons-page id="page1">
+            <ons-toolbar>
+                <div class="center">Lista de cervezas</div>
+            </ons-toolbar>
+
+            <ons-list class="container">
+                <ons-list-item id="buttonAlhambra">
+                    <div class="project">
+                        <figure class="img-responsive">
+                            <img src="img/Alhambra.png">
+                            <figcaption>
+                                <span class="project-details">Alhambra Tradicional</span>
+                                <span class="project-creator"><a href="https://www.cervezasalhambra.es/"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </ons-list-item>
+
+                <ons-list-item id="buttonGuinness">
+                    <div class="project push-button">
+                        <figure class="img-responsive">
+                            <img src="img/Guinness.png">
+                            <figcaption>
+                                <span class="project-details">Guinness Draught</span>
+                                <span class="project-creator"><a href="https://www.guinness.com"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </ons-list-item>
+
+                <ons-list-item id="buttonCorona">
+                    <div class="project push-button">
+                        <figure class="img-responsive">
+                            <img src="img/corona.png">
+                            <figcaption>
+                                <span class="project-details">Corona</span>
+                                <span class="project-creator"><a href="https://cervezacorona.es"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </ons-list-item>
+
+                <ons-list-item id="buttonSanMiguel">
+                    <div class="project push-button">
+                        <figure class="img-responsive">
+                            <img src="img/SanMiguel.png">
+                            <figcaption>
+                                <span class="project-details">San Miguel</span>
+                                <span class="project-creator"><a href="https://www.sanmiguel.es/"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </ons-list-item>
+            </ons-list>
+        </ons-page>
+    </ons-template>
+
+    <ons-template id="pageAlhambra.html">
+        <ons-page id="pageAlhambra">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-back-button>Back</ons-back-button>
+                </div>
+                <div class="center">Cerveza Alhambra</div>
+            </ons-toolbar>
+
+            <div class="sesenta">
+                <img src="img/alhambra.jpeg" class="img-detalle">
+            </div>
+
+            <div class="cuarenta">
+                <h2>Alhambra Tradicional</h2>
+                <h6><a href="https://www.cervezasalhambra.es/"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></h6>
+                <p>Siendo la cerveza aún una bebida bastante desconocida en Granada, nuestros primeros maestros cerveceros pusieron toda su inspiración al servicio de esta primera creación. Tomando como referencia las cervezas alemanas tipo Lager Helles
+                    de la región de Baviera, se propusieron hacer una que se adaptara a las preferencias haciéndola menos amarga y con una carga de lúpulo más ligera para acercarla al paladar local.</p>
+            </div>
+
+        </ons-page>
+    </ons-template>
+
+    <ons-template id="pageGuinness.html">
+        <ons-page id="pageGuinness">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-back-button>Back</ons-back-button>
+                </div>
+                <div class="center">Cerveza Guinness</div>
+            </ons-toolbar>
+
+            <div class="sesenta">
+                <img src="img/guinness.jpeg" class="img-detalle">
+            </div>
+
+            <div class="cuarenta">
+                <h2>Guinness</h2>
+                <h6><a href="https://www.guinness.com"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></h6>
+                <p>Rica y cremosa. Peculiar color negro. Final aterciopelado. Esta cerveza icónica está definida por su armonía. Sorbo tras sorbo, el dulzor contrarresta el amargor cuando aparece la malta para mezclarse con una base de cebada tostada. De
+                    la misma manera que la inconfundible capa de espuma se posa sobre la cerveza negra, los sabores se contrarrestan y combinan perfectamente. Es nuestra mejor innovación. Verdaderamente única. Perfectamente equilibrada. Made of More™.
+                </p>
+            </div>
+        </ons-page>
+    </ons-template>
+
+    <ons-template id="pageCorona.html">
+        <ons-page id="pageCorona">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-back-button>Back</ons-back-button>
+                </div>
+                <div class="center">Cerveza Corona</div>
+            </ons-toolbar>
+
+            <div class="sesenta">
+                <img src="img/corona.jpeg" class="img-detalle">
+            </div>
+
+            <div class="cuarenta">
+                <h2>Corona</h2>
+                <h6><a href="https://cervezacorona.es"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></h6>
+                <p>El porqué de su nombre Es coger una Corona y convertirte en un rey. Disfruta de una cerveza única y sobre todo de gran calidad. Los colores de la etiqueta Amarilla como el sol, azul como el mar. La etiqueta de Corona te lleva a la mejor
+                    playa del mundo: aquella que sientes dentro de ti.</p>
+            </div>
+        </ons-page>
+    </ons-template>
+
+    <ons-template id="pageSanMiguel.html">
+        <ons-page id="pageSanMiguel">
+            <ons-toolbar>
+                <div class="left">
+                    <ons-back-button>Back</ons-back-button>
+                </div>
+                <div class="center">Cerveza San Miguel</div>
+            </ons-toolbar>
+
+            <div class="sesenta">
+                <img src="img/sanmiguel.jpeg" class="img-detalle">
+            </div>
+
+            <div class="cuarenta">
+                <h2>San Miguel</h2>
+                <h6><a href="https://www.sanmiguel.com"><i class="fa fa-link" aria-hidden="true"></i> WEB</a></h6>
+                <p>San Miguel 0,0 es la Cerveza San Miguel que ofrece a los apasionados de la cerveza la posibilidad de disfrutar de una experiencia cervecera sin alcohol. Disfrutar es, en esencia, sentirse bien, con uno mismo, con los demás, con el entorno.
+                    Una satisfacción que surge de las pequeñas cosas, como darse tiempo, relajarse y cuidarse.</p>
+            </div>
+        </ons-page>
+    </ons-template>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('init', function(event) {
+            var page = event.target;
+
+            if (page.id === 'page1') {
+                page.querySelector('#buttonAlhambra').onclick = function() {
+                    document.querySelector('#myNavigator').pushPage('pageAlhambra.html', {
+                        data: {
+                            title: 'Cerveza Alhambra'
+                        }
+                    });
+                };
+
+                page.querySelector('#buttonGuinness').onclick = function() {
+                    document.querySelector('#myNavigator').pushPage('pageGuinness.html', {
+                        data: {
+                            title: 'Cerveza Guinness'
+                        }
+                    });
+                };
+
+                page.querySelector('#buttonCorona').onclick = function() {
+                    document.querySelector('#myNavigator').pushPage('pageCorona.html', {
+                        data: {
+                            title: 'Cerveza Corona'
+                        }
+                    });
+                };
+
+                page.querySelector('#buttonSanMiguel').onclick = function() {
+                    document.querySelector('#myNavigator').pushPage('pageSanMiguel.html', {
+                        data: {
+                            title: 'Cerveza San Miguel'
+                        }
+                    });
+                };
+            } else if (page.id === 'page2') {
+                page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
